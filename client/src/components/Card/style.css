@@ -13,7 +13,7 @@ html {
     height: 40px;
     border-radius:65%;
     width:75%;
-    background:#b1bfd8 ;
+    background:#a8adb6 ;
     color:white ;
     font-size:1.3em;
 
@@ -21,4 +21,8 @@ html {
 
 #registerBtn {
     color: black;
+}
+
+#registerBtn:hover {
+    text-decoration: underline;
 }

@@ -7,7 +7,7 @@ class Card extends Component {
         return (
             <div className="card p-3">
                 <div className="card-body">
-                <h5 class="card-title">View Your Accounts</h5>
+                <h5 className="card-title">View Your Accounts</h5>
                     <form id="loginForm">
                         <p>Username</p>
                         <input type="text" />

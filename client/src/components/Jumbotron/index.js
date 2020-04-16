@@ -6,7 +6,7 @@ class Jumbotron extends Component {
     render() {
         return (
             <div class="jumbotron jumbotron-fluid">
-                <div class="container">
+                <div className="container">
                     <Card></Card>
                 </div>
             </div>
