@@ -1,0 +1,24 @@
+html {
+    overflow-x: hidden;
+}
+
+.card {
+    width: 18rem;
+    box-shadow: 5px 4px rgba(0, 0, 0, 0.233);
+    margin: auto;
+    margin-top: 0px;
+}
+
+#loginBtn {
+    height: 40px;
+    border-radius:65%;
+    width:75%;
+    background:#b1bfd8 ;
+    color:white ;
+    font-size:1.3em;
+
+}
+
+#registerBtn {
+    color: black;
+}
