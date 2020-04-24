@@ -4,12 +4,15 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require("path");
 
-//routes
-
-
+const users = require("../routes/users");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+
+//routes
+// const apiRoutes = require("../routes/apiRoutes");
+// const htmlRoutes = require("../routes/htmlRoutes");
+app.use(users);
 
 // Define middleware here
 app.use(bodyParser.json());
@@ -27,6 +30,17 @@ if (process.env.NODE_ENV === "production") {
       res.sendFile(path.join(__dirname, '/client/build/index.html'));
     });
 }
+
+// Connect to Mongoose
+const mongoURI = "mongodb://localhost:27017/HeroBanking";
+
+mongoose
+  .connect(
+    process.env.MONGODB_URI||
+    mongoURI,
+    { useNewUrlParser: true }
+  )
+  .catch(err => console.log(err))
 
 
 app.listen(PORT, () => {

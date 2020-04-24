@@ -3,6 +3,10 @@ import { Link, withRouter } from 'react-router-dom';
 import "./style.css";
 
 class Card extends Component {
+    handleFormSubmit() {
+        
+    }
+    
     render() {
         return (
             <div className="card p-3">
